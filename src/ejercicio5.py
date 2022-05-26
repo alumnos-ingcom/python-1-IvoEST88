@@ -14,7 +14,7 @@ def division_lenta(dividendo, divisor):
     """
     signo=1
     cociente = 0
-    if dividendo <0 and divisor > 0:
+    if dividendo <0:
         dividendo = abs(dividendo)
         signo = -1
     elif dividendo >0 and divisor >0:
@@ -33,9 +33,12 @@ def division_lenta(dividendo, divisor):
     resto = dividendo
     return cociente, resto
 def principal():
+    """
+    Programa
+    """
     dividendo = int(input("Ingrese el dividendo: "))
     divisor = int(input("Ingrese el divisor: "))
-    return(division_lenta(dividendo, divisor))
-
+    return division_lenta(dividendo, divisor)
 if __name__=="__main__":
     principal()
+    
