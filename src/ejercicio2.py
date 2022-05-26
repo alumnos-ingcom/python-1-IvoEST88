@@ -19,14 +19,12 @@ def signo(numero):
     Ingresar numero, determinar si es positivo, negativo o cero
     """
     if numero==0:
-        sgn = "Cero"
+        sgn = print("Cero")
     elif numero + abs(numero)==0:
-        sgn = "Negativo"
+        sgn = print("Negativo")
     else:
-        sgn = "Positivo."
+        sgn = print("Positivo.")
     return sgn
-
-print (principal())
 
 if __name__=="__main__":
     principal()
