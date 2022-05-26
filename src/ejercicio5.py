@@ -23,7 +23,6 @@ def division_lenta(dividendo, divisor):
         signo = 1
     elif divisor <0:
         return print("No se puede utilizar un divisor igual o menor a 0")
-
     else:
         return print("No se puede utilizar un dividendo igual o menor a 0")
     while dividendo > divisor:
@@ -33,7 +32,7 @@ def division_lenta(dividendo, divisor):
         dividendo *= signo
         print(f"Resto : {dividendo}")
         print("--------------")
-    resto = dividendo 
+    resto = dividendo
     return cociente, resto
 def principal():
     """
