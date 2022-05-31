@@ -14,7 +14,7 @@ def test_sexadecimal_a_decimal():
     segundos = 45
     resultado = sexadecimal_a_decimal(horas, minutos, segundos)
     assert isinstance (resultado, int), "El resultado debe ser 11325"
-    assert resultado == 11325, "El resultado es el esperado"
+    assert resultado == 11325, "No se obtuvo el resultado esperado"
 
 def test_decimal_a_sexadecimal():
     """
@@ -23,5 +23,5 @@ def test_decimal_a_sexadecimal():
     seg_a_conv = 11325
     resultado = decimal_a_sexadecimal(seg_a_conv)
     assert isinstance (resultado, int), "El resultado debe ser 3;8;45"
-    assert resultado == 3;8;45, "El resultado es el esperado"
+    assert resultado == 3;8;45, "No se obtuvo el resultado esperado"
     

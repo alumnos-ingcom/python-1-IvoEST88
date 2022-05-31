@@ -13,7 +13,7 @@ def suma_lenta_pos_ambos():
     num2 = 5
     resultado = suma_lenta(num1, num2)
     assert isinstance(resultado, int), "El resultado debe ser 10"
-    assert resultado ==10, "Se obtuvo el resultado esperado"
+    assert resultado ==10, "No se obtuvo el resultado esperado"
 def suma_lenta_neg_ambos():
     """
     Test donde ambos numeros son negativos
@@ -22,7 +22,7 @@ def suma_lenta_neg_ambos():
     num2 = -5
     resultado = suma_lenta(num1, num2)
     assert isinstance(resultado, int), "El resultado debe ser -10"
-    assert resultado ==-10, "Se obtuvo el resultado esperado"
+    assert resultado ==-10, "No se obtuvo el resultado esperado"
 def suma_lenta_pos_neg():
     """
     Test donde num1 es positivo y num2 negativo
@@ -31,7 +31,7 @@ def suma_lenta_pos_neg():
     num2 = -5
     resultado = suma_lenta(num1, num2)
     assert isinstance(resultado, int), "El resultado debe ser 0"
-    assert resultado ==0, "Se obtuvo el resultado esperado"
+    assert resultado ==0, "No se obtuvo el resultado esperado"
 def suma_lenta_neg_pos():
     """
     Test donde num1 es negativo y num2 positivo
@@ -40,5 +40,5 @@ def suma_lenta_neg_pos():
     num2 = 5
     resultado = suma_lenta(num1, num2)
     assert isinstance(resultado, int), "El resultado debe ser 0"
-    assert resultado ==0, "Se obtuvo el resultado esperado"
+    assert resultado ==0, "No se obtuvo el resultado esperado"
     
