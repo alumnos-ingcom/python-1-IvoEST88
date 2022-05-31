@@ -1,6 +1,8 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar horas, minutos y segundos // segundos
+# Postcondicion: Obtener la conversion de horas, minutos y segundos a segundos // segundos a horas, minutos y segundos
 ################
 """
 7. Transformación de un número
@@ -23,7 +25,7 @@ def decimal_a_sexadecimal(seg_a_conv):
     segundos = seg_a_conv % 3600
     minutos = int(segundos / 60)
     segundos = segundos % 60
-    return horas,minutos,segundos
+    return horas;minutos;segundos
 
 def principal():
     """
@@ -32,14 +34,26 @@ def principal():
     print ("1. Ingresar horas, minutos y segundos para convertirlo a segundos.")
     print ("2. Ingresar segundos y pasar a horas, minutos y segundos.")
     eleccion = int(input("Ingrese: "))
-    if eleccion == 1:
-        horas = int(input("Ingrese hora/s: "))
-        minutos = int(input("Ingrese minuto/s: "))
-        segundos = int(input("Ingrese segundo/s: "))
-        print (sexadecimal_a_decimal(horas, minutos, segundos))
+    if eleccion < 1 or eleccion >2:
+        print ("Elección fuera de rango")
     else:
-        seg_a_conv = int(input("Ingrese segundos: "))
-        print (decimal_a_sexadecimal(seg_a_conv))
+        if eleccion == 1:
+            horas = int(input("Ingrese hora/s: "))
+            if horas <0:
+                print ("Horas no puede ser menor a 0")
+            else:
+                minutos = int(input("Ingrese minuto/s: "))
+                if minutos <0:
+                    print ("Minutos no puede ser menor a 0")
+                else:
+                    segundos = int(input("Ingrese segundo/s: "))
+                    if segundos <0:
+                        print ("Segundos no puede ser menor a 0")
+                    else:
+                        print (sexadecimal_a_decimal(horas, minutos, segundos))
+        else:
+            seg_a_conv = int(input("Ingrese segundos: "))
+            print (decimal_a_sexadecimal(seg_a_conv))
 if __name__=="__main__":
     principal()
     

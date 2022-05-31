@@ -1,6 +1,8 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar numero y multiplo
+# Postcondicion: Indica con True si el numero es multiplo del segundo número ingresado.
 ################
 """
 11. Multiplos de
@@ -14,19 +16,24 @@ def es_multiplo(numero, multiplo):
     if multiplo == 0:
         print ("0 es multiplo de todos los números")
     else:
+        if multiplo <0 or numero <0:
+            multiplo = abs(multiplo)
+            numero = abs(numero)
+        else:
+            pass
         while numero > 0:
             numero -= multiplo
             if numero == 0:
-                resultado = "True"
+                resultado = True
             else:
-                resultado = "False"
+                resultado = False
     return resultado
 def principal():
     """
     Programa
     """
-    numero = abs(int(input("Ingrese un número: ")))
-    multiplo = abs(int(input("Ingrese el numero a determinar si es multiplo: ")))
+    numero = (int(input("Ingrese un número: ")))
+    multiplo = (int(input("Ingrese el numero a determinar si es multiplo: ")))
     print(es_multiplo(numero, multiplo))
 if __name__=="__main__":
     principal()

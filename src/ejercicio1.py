@@ -1,8 +1,9 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar grado centigrado y grado fahrenheit
+# Postcondicion: Imprime cuantos grados fahrenheit equivalen "X" grados celsius y viceversa
 ################
-
 """
 1. Conversión de temperaturas
 """

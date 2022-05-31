@@ -1,6 +1,8 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar un número
+# Postcondicion: Retorna true si el numero es primo. False si el numero no es primo
 ################
 """
 8. Números primos
@@ -11,6 +13,10 @@ def es_primo(numero):
     """
     Indicar con true si un numero indicado es primo.
     """
+    if numero <0:
+        numero = abs(numero)
+    else:
+        pass
     div = 2
     primo = 0
     while primo == 0 and div<numero:
@@ -19,9 +25,9 @@ def es_primo(numero):
         else:
             div += 1
     if primo == 1:
-        resultado = "False"
+        resultado = False
     else:
-        resultado = "True"
+        resultado = True
     return resultado
 def principal():
     """

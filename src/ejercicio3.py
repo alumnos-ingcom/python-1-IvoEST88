@@ -1,6 +1,8 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar dos números
+# Postcondicion: retorna un valor dependiendo si el primer numero es mayor, menor o igual al segundo numero ingresado
 ################
 
 """
@@ -16,12 +18,11 @@ def compara(num1, num2):
     Comparar ambos valores, indicar cual es mayor, menor o si son iguales
     """
     if num1 == num2:
-        resultado = 0
+        return 0
     elif num1 - num2 >= 0:
-        resultado = 1
+        return 1
     else:
-        resultado = -1
-    return resultado
+        return -1
 
 def principal():
     """

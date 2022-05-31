@@ -1,6 +1,8 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar dividendo y divisor
+# Postcondicion: retorna cociente y resto de una division con restas sucesivas
 ################
 
 """
@@ -29,21 +31,21 @@ def division_lenta(dividendo, divisor):
         dividendo *= -1
         divisor *= -1
     elif dividendo < divisor:
-        return print("El dividendo no puede ser menor al divisor")
+        print("El dividendo no puede ser menor al divisor")
     else:
-        return print("El divisor no puede ser 0!")
+        print("El divisor no puede ser 0!")
     while dividendo >= divisor:
         cociente += 1
         print(f"{dividendo} - {divisor}")
-        dividendo -= divisor
-        print(f"Resto : {signo}{dividendo}")
+        dividendo = dividendo - divisor
         print("--------------")
     dividendo *= signo
     divisor *= signo2
     cociente *= signo
     cociente *= signo2
-    resto = dividendo
-    return print(f"Cociente: {cociente}\nResto: {resto}")
+    resto = dividendo // divisor
+    print (F"Cociente: {cociente}\nResto: {resto}")
+    return cociente;resto
 def principal():
     """
     Programa

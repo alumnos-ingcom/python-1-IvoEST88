@@ -1,6 +1,8 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar dos numeros
+# Postcondicion: Devuelve la suma lenta de ambos numeros
 ################
 
 """

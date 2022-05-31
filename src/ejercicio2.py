@@ -1,6 +1,8 @@
 ################
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
+# Precondicion: Ingresar un numero
+# Postcondicion: determina si el numero es negativo, positivo o igual a cero
 ################
 
 """
@@ -20,11 +22,13 @@ def signo(numero):
     """
     if numero==0:
         sgn = print("Cero")
+        return 0
     elif numero + abs(numero)==0:
         sgn = print("Negativo")
+        return -1
     else:
         sgn = print("Positivo.")
-    return sgn
+        return 1
 
 if __name__=="__main__":
     principal()
