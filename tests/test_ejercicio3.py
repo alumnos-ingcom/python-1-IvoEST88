@@ -1,8 +1,6 @@
 """
 Tests de los ejercicios en la carpeta src
 """
-import pytest
-
 from src.ejercicio3 import compara
 
 def test_compara_menor():

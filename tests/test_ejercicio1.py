@@ -1,8 +1,6 @@
 """
 Tests de los ejercicios en la carpeta src
 """
-import pytest
-
 from src.ejercicio1 import convertir_a_fahrenheit, convertir_a_centigrados
 
 def test_convertir_a_fahrenheit():

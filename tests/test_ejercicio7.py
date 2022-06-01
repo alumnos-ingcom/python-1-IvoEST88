@@ -1,8 +1,6 @@
 """
 Tests de los ejercicios en la carpeta src
 """
-import pytest
-
 from src.ejercicio7 import sexadecimal_a_decimal, decimal_a_sexadecimal
 
 def test_sexadecimal_a_decimal():

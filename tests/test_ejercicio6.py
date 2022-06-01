@@ -1,8 +1,6 @@
 """
 Tests de los ejercicios en la carpeta src
 """
-import pytest
-
 from src.ejercicio6 import ordenar_mayor_a_menor, ordenar_menor_a_mayor
 
 def test_ordenar_mayor_a_menor():

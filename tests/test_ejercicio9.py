@@ -1,8 +1,6 @@
 """
 Tests de los ejercicios en la carpeta src
 """
-import pytest
-
 from src.ejercicio9 import factores_primos
 
 def test_factores_primos():

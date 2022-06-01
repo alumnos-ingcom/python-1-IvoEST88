@@ -1,8 +1,6 @@
 """
 Tests de los ejercicios en la carpeta src
 """
-import pytest
-
 from src.ejercicio4 import suma_lenta
 
 def suma_lenta_pos_ambos():
