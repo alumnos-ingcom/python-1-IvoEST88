@@ -2,7 +2,8 @@
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
 # Precondicion: Ingresar horas, minutos y segundos // segundos
-# Postcondicion: Obtener la conversion de horas, minutos y segundos a segundos // segundos a horas, minutos y segundos
+# Postcondicion: Obtener la conversion de horas, minutos y segundos a segundos
+# y segundos: a horas, minutos y segundos
 ################
 """
 7. Transformación de un número
@@ -25,7 +26,7 @@ def decimal_a_sexadecimal(seg_a_conv):
     segundos = seg_a_conv % 3600
     minutos = int(segundos / 60)
     segundos = segundos % 60
-    return horas;minutos;segundos
+    return horas, minutos, segundos
 
 def principal():
     """

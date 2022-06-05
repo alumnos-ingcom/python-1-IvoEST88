@@ -20,7 +20,7 @@ def test_decimal_a_sexadecimal():
     """
     test para convertir 11325 a 3 horas, 8 minutos y 45 segundos
     """
-    seg_a_conv = 11325
+    seg_a_conv = 9020
     resultado = decimal_a_sexadecimal(seg_a_conv)
-    assert isinstance(resultado, int), "El resultado debe ser 3;8;45"
-    assert resultado == 3; 8; 45, "No se obtuvo el resultado esperado"
+    assert isinstance(resultado, tuple), "El resultado debe ser 2, 30, 20"
+    assert resultado == (2, 30, 20), "No se obtuvo el resultado esperado"

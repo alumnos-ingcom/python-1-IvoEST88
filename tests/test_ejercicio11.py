@@ -11,7 +11,7 @@ def test_es_multiplo_true():
     numero = 10
     multiplo = 2
     resultado = es_multiplo(numero, multiplo)
-    assert isinstance(resultado, int), "El resultado debe ser True"
+    assert isinstance(resultado, bool), "El resultado debe ser True"
     assert resultado is True, "No se obtuvo el resultado esperado"
 
 
@@ -22,7 +22,7 @@ def test_es_multiplo_false():
     numero = 10
     multiplo = 3
     resultado = es_multiplo(numero, multiplo)
-    assert isinstance(resultado, int), "El resultado debe ser False"
+    assert isinstance(resultado, bool), "El resultado debe ser False"
     assert resultado is False, "No se obtuvo el resultado esperado"
 
 
@@ -33,7 +33,7 @@ def test_es_multiplo_true_numneg():
     numero = -10
     multiplo = 2
     resultado = es_multiplo(numero, multiplo)
-    assert isinstance(resultado, int), "El resultado debe ser True"
+    assert isinstance(resultado, bool), "El resultado debe ser True"
     assert resultado is True, "No se obtuvo el resultado esperado"
 
 
@@ -44,7 +44,7 @@ def test_es_multiplo_false_numneg():
     numero = -10
     multiplo = 3
     resultado = es_multiplo(numero, multiplo)
-    assert isinstance(resultado, int), "El resultado debe ser False"
+    assert isinstance(resultado, bool), "El resultado debe ser False"
     assert resultado is False, "No se obtuvo el resultado esperado"
 
 
@@ -55,7 +55,7 @@ def test_es_multiplo_true_multiploneg():
     numero = 10
     multiplo = -2
     resultado = es_multiplo(numero, multiplo)
-    assert isinstance(resultado, int), "El resultado debe ser True"
+    assert isinstance(resultado, bool), "El resultado debe ser True"
     assert resultado is True, "No se obtuvo el resultado esperado"
 
 

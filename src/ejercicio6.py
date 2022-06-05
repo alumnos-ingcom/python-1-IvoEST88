@@ -2,7 +2,7 @@
 # Nombre - @IvoEST88
 # UNRN Andina - Introducción a la Ingenieria en Computación
 # Precondicion: ingresar 3 números
-# Postcondicion: Ordenarlos de mayor a menor y de menor a mayor 
+# Postcondicion: Ordenarlos de mayor a menor y de menor a mayor
 ################
 """
 6. Ordenar 3 valores
@@ -58,8 +58,10 @@ def principal():
     uno = int(input("Ingrese un número: "))
     dos = int(input("Ingrese un número: "))
     tres = int(input("Ingrese un número: "))
-    print(ordenar_mayor_a_menor(uno, dos, tres))
-    print(ordenar_menor_a_mayor(uno, dos, tres))
+    resultado_mayor_a_menor = ordenar_mayor_a_menor(uno, dos, tres)
+    resultado_menor_a_mayor = ordenar_menor_a_mayor(uno, dos, tres)
+    print (resultado_mayor_a_menor)
+    print (resultado_menor_a_mayor)
 if __name__=="__main__":
     principal()
               

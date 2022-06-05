@@ -11,8 +11,8 @@ def test_division_lenta_pos():
     dividendo = 10
     divisor = 2
     resultado = division_lenta(dividendo, divisor)
-    assert isinstance(resultado, int), "El resultado debe ser 5;0"
-    assert resultado == 5; 0, "No se obtuvo el resultado esperado"
+    assert isinstance(resultado, tuple), "El resultado debe ser (5, 0)"
+    assert resultado == (5, 0), "No se obtuvo el resultado esperado"
 
 
 def test_division_lenta_neg():
@@ -22,8 +22,8 @@ def test_division_lenta_neg():
     dividendo = -10
     divisor = -2
     resultado = division_lenta(dividendo, divisor)
-    assert isinstance(resultado, int), "El resultado debe ser 5;0"
-    assert resultado == 5; 0, "No se obtuvo el resultado esperado"
+    assert isinstance(resultado, tuple), "El resultado debe ser (5, 0)"
+    assert resultado == (5, 0), "No se obtuvo el resultado esperado"
 
 
 def test_division_lenta_pos_neg():
@@ -33,8 +33,8 @@ def test_division_lenta_pos_neg():
     dividendo = 10
     divisor = -2
     resultado = division_lenta(dividendo, divisor)
-    assert isinstance(resultado, int), "El resultado debe ser -5;0"
-    assert resultado == -5; 0, "No se obtuvo el resultado esperado"
+    assert isinstance(resultado, tuple), "El resultado debe ser (-5, 0)"
+    assert resultado == (-5, 0), "No se obtuvo el resultado esperado"
 
 
 def test_division_lenta_neg_pos():
@@ -44,5 +44,5 @@ def test_division_lenta_neg_pos():
     dividendo = -10
     divisor = 2
     resultado = division_lenta(dividendo, divisor)
-    assert isinstance(resultado, int), "El resultado debe ser -5;0"
-    assert resultado == -5; 0, "El resultado es el esperado"
+    assert isinstance(resultado, tuple), "El resultado debe ser (-5, 0)"
+    assert resultado == (-5, 0), "El resultado es el esperado"

@@ -11,6 +11,7 @@
 #Escribir una función que haga la suma entre dos números enteros sin operacion de manera directa.
 #La funcion debe ser capaz de sumar cualquier numero entero positivo y negativo.
 
+
 def suma_lenta(num1, num2):
     """
     Ingresar dos numeros, y realizar una suma lenta.
@@ -38,12 +39,14 @@ def suma_lenta(num1, num2):
             num1 += 1
     return num1
 
+
 def principal():
     """
     Programa
     """
     num1 = int(input("Ingrese un número: "))
     num2 = int(input("Ingrese otro número: "))
-    print(f"El resultado de la suma lenta es: {suma_lenta(num1, num2)}")
+    resultado_suma_lenta = suma_lenta(num1, num2)
+    print(f"El resultado de la suma lenta es: {resultado_suma_lenta}")
 if __name__=="__main__":
     principal()

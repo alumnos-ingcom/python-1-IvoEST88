@@ -14,7 +14,7 @@ def es_multiplo(numero, multiplo):
     Esta funcion indica si un numero es multiplo de otro.
     """
     if multiplo == 0:
-        print ("0 es multiplo de todos los números")
+        resultado = "0 es multiplo de todos los números"
     else:
         if multiplo <0 or numero <0:
             multiplo = abs(multiplo)
@@ -34,6 +34,7 @@ def principal():
     """
     numero = (int(input("Ingrese un número: ")))
     multiplo = (int(input("Ingrese el numero a determinar si es multiplo: ")))
-    print(es_multiplo(numero, multiplo))
+    resultado_es_multiplo = es_multiplo(numero, multiplo)
+    print (resultado_es_multiplo)
 if __name__=="__main__":
     principal()

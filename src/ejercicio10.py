@@ -16,15 +16,19 @@ def es_palindromo(texto):
     """
     texto = texto.lower() #poner todas las letras en minuscula
     texto = "".join(texto.split()) #quitar espacios
-    if str(texto) == str(texto)[::-1]:
-        return True
+    long_texto = len(texto)
+    texto_invertido = texto[long_texto::-1]
+    if texto == texto_invertido:
+        resultado = True
     else:
-        return False
+        resultado = False
+    return resultado
 def principal():
     """
     Programa
     """
     texto = input("Ingrese una palabra o frase Palindromo: ")
-    print (es_palindromo(texto))
+    resultado_es_palindromo = es_palindromo(texto)
+    print (resultado_es_palindromo)
 if __name__=="__main__":
     principal()

@@ -34,6 +34,7 @@ def principal():
     Programa
     """
     numero = int(input("Ingrese un valor: "))
-    print (es_primo(numero))
+    resultado_es_primo = es_primo(numero)
+    print (resultado_es_primo)
 if __name__=="__main__":
     principal()

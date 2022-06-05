@@ -10,25 +10,27 @@
 """
 #Escribir una función que reciba un número e indique si el mismo es:
 #positivo, negativo o cero utilizando sumas y restas.
+def signo(numero):
+    """
+    Funcion que determina si un numero es Positivo, Negativo o igual a Cero
+    """
+    if numero==0:
+        sgn = 0
+        print ("Cero")
+    else:
+        if numero + abs(numero)==0:
+            sgn = -1
+            print ("Negativo")
+        else:
+            print ("Positivo")
+            sgn = 1
+    return sgn
 def principal():
     """
     Programa
     """
     numero = int(input("Ingrese un número: "))
-    return signo(numero)
-def signo(numero):
-    """
-    Ingresar numero, determinar si es positivo, negativo o cero
-    """
-    if numero==0:
-        sgn = print("Cero")
-        return 0
-    elif numero + abs(numero)==0:
-        sgn = print("Negativo")
-        return -1
-    else:
-        sgn = print("Positivo.")
-        return 1
-
+    resultado_signo = signo(numero)
+    print (resultado_signo)
 if __name__=="__main__":
     principal()

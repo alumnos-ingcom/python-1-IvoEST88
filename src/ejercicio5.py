@@ -45,14 +45,14 @@ def division_lenta(dividendo, divisor):
     cociente *= signo2
     resto = dividendo // divisor
     print (F"Cociente: {cociente}\nResto: {resto}")
-    return cociente;resto
+    return cociente, resto
 def principal():
     """
     Programa
     """
     dividendo = int(input("Ingrese el dividendo: "))
     divisor = int(input("Ingrese el divisor: "))
-    return division_lenta(dividendo, divisor)
+    print (division_lenta(dividendo, divisor))
 if __name__=="__main__":
     principal()
     
