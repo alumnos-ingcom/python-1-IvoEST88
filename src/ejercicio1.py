@@ -16,9 +16,9 @@ def convertir_a_fahrenheit(centigrados):
     return (centigrados* 1.8) + 32
 def convertir_a_centigrados(fahrenheit):
     """
-    Convierte fahrenheit a centigrados y redondea los primeros dos decimales
+    Convierte fahrenheit a centigrados y returna el numero con los primeros dos decimales
     """
-    return round(((fahrenheit-32) / 1.8),2)
+    return ((fahrenheit-32) / 1.8)
 
 def principal():
     """
@@ -29,6 +29,6 @@ def principal():
     resultado_centigrados = convertir_a_centigrados(fahrenheit)
     resultado_fahrenheit = convertir_a_fahrenheit(centigrados)
     print (f"{centigrados}ºC equivalen a: {resultado_fahrenheit} ºF")
-    print (f"{fahrenheit}ºF equivalen a: {resultado_centigrados} ºC")
+    print (f"{fahrenheit}ºF equivalen a: {resultado_centigrados:.2f} ºC")
 if __name__=="__main__":
     principal()
